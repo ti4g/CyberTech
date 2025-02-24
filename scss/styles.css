@@ -1,0 +1,137 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background: #333;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    background: #555;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.628), rgba(0, 0, 0, 0.55)), url('/assets/cyber_img.jpg');
+    background-size: cover;
+    color: white;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.container {
+    padding: 2rem 5%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 2rem 5%;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid #555;
+}
+
+/* Estilos específicos para outras páginas */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Tema Claro (Padrão) */
+body.tema-claro {
+    background-color: #ffffff;
+    color: #363636;
+}
+
+/* Tema Escuro */
+body.tema-escuro {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+body.tema-escuro .navbar {
+    background-color: #0a0a0a;
+}
+
+body.tema-escuro .box {
+    background-color: #2d2d2d;
+    color: #f5f5f5;
+}
+
+body.tema-escuro .footer {
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+}
+
+body.tema-escuro .title,
+body.tema-escuro .label {
+    color: #f5f5f5;
+}
+
+body.tema-escuro .input,
+body.tema-escuro .select select {
+    background-color: #363636;
+    color: #f5f5f5;
+    border-color: #4a4a4a;
+}
+
+body.tema-escuro .input::placeholder,
+body.tema-escuro .select select::placeholder {
+    color: #a0a0a0;
+}

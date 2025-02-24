@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Configurações</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <h1 class="title is-4 has-text-white">TechStore</h1>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">Início</a>
+                <a class="navbar-item" href="produtos.html">Produtos</a>
+                <a class="navbar-item" href="sobre.html">Sobre Nós</a>
+                <a class="navbar-item" href="contato.html">Contato</a>
+                <a class="navbar-item" href="config.html">Configurações</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered">Configurações</h2>
+            
+            <!-- Painel de Configurações -->
+            <div class="columns">
+                <!-- Menu Lateral -->
+                <div class="column is-one-quarter">
+                    <aside class="menu">
+                        <p class="menu-label">Preferências</p>
+                        <ul class="menu-list">
+                            <li><a class="is-active" data-tab="tema">Tema</a></li>
+                            <li><a data-tab="idioma">Idioma</a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <!-- Conteúdo das Configurações -->
+                <div class="column">
+                    <!-- Configurações de Tema -->
+                    <div id="tema" class="tab-content">
+                        <h3 class="title is-4">Tema</h3>
+                        <div class="box">
+                            <div class="field">
+                                <label class="radio">
+                                    <input type="radio" name="tema" value="claro" checked>
+                                    Tema Claro
+                                </label>
+                            </div>
+                            <div class="field">
+                                <label class="radio">
+                                    <input type="radio" name="tema" value="escuro">
+                                    Tema Escuro
+                                </label>
+                            </div>
+                            <button id="aplicar-tema" class="button is-primary">Aplicar Tema</button>
+                        </div>
+                    </div>
+
+                    <!-- Configurações de Idioma -->
+                    <div id="idioma" class="tab-content is-hidden">
+                        <h3 class="title is-4">Idioma</h3>
+                        <div class="box">
+                            <div class="field">
+                                <label class="label">Selecione o idioma</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select id="selecionar-idioma">
+                                            <option value="pt-br">Português (Brasil)</option>
+                                            <option value="en">Inglês</option>
+                                            <option value="es">Espanhol</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="aplicar-idioma" class="button is-primary">Aplicar Idioma</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2023 TechStore - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+<script src="/js/config.js"></script>
+</body>
+</html>
