@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+   //  o qoo tombom
+
+
+
+
     // Função para aplicar o tema
     const aplicarTemaBtn = document.getElementById('aplicar-tema');
     aplicarTemaBtn.addEventListener('click', () => {
