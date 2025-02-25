@@ -1,5 +1,5 @@
 .minha-section{
-    background: linear-gradient(rgba(0, 0, 0, 0.196), rgba(0, 0, 0, 0.5)), url('../assets/cyber_img.jpg') no-repeat center center; 
+    background: linear-gradient(rgba(0, 0, 0, 0.196), rgba(0, 0, 0, 0.5)), url('./../assets/cyber_img.jpg') no-repeat center center; 
     background-size: cover;
   }
 
