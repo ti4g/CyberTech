@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberStore - Início</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./scss/styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
     <link rel="stylesheet" href="path/to/bulma.css">
     <link rel="stylesheet" href="path/to/custom.css">
 
@@ -13,31 +13,31 @@
 <body>
 
     <!-- Navbar com Bulma -->
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
-                <h1 class="title is-2by3 has-text-white">CyberStore</h1>
+                <h1 class="title is-4" data-translate="logo">CyberStore</h1>
             </a>
         </div>
 
         <div class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item" href="index.html">Início</a>
-                <a class="navbar-item" href="produtos.html">Produtos</a>
-                <a class="navbar-item" href="sobre.html">Sobre Nós</a>
-                <a class="navbar-item" href="contato.html">Contato</a>
-                <a class="navbar-item" href="config.html">Configurações</a>
+                <a class="navbar-item" href="index.html" data-translate="inicio">Início</a>
+                <a class="navbar-item" href="produtos.html" data-translate="produtos">Produtos</a>
+                <a class="navbar-item" href="sobre.html" data-translate="sobre">Sobre Nós</a>
+                <a class="navbar-item" href="contato.html" data-translate="contato">Contato</a>
+                <a class="navbar-item" href="config.html" data-translate="config">Configurações</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section com Bulma -->
-    <section class= "hero is-primary is-medium minha-section">
+    <section class="hero is-primary is-medium minha-section">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h2 class="title is-1">Bem-vindo à CyberStore</h2>
-                <p class="subtitle">As melhores tecnologias pelo melhor preço</p>
-                <a href="produtos.html" class="button is-light is-large">Ver Produtos</a>
+                <h2 class="title is-1" data-translate="bem_vindo">Bem-vindo à CyberStore</h2>
+                <p class="subtitle" data-translate="slogan">As melhores tecnologias pelo melhor preço</p>
+                <a href="produtos.html" class="button is-light is-large" data-translate="ver_produtos">Ver Produtos</a>
             </div>
         </div>
     </section>
@@ -45,7 +45,7 @@
     <!-- Conteúdo Principal -->
     <section class="section">
         <div class="container">
-            <h3 class="title is-2 has-text-centered">Novidades</h3>
+            <h3 class="title is-2 has-text-centered" data-translate="novidades">Novidades</h3>
             <div class="columns is-multiline">
                 <!-- primeiro card -->
                 <div class="column is-one-third">
@@ -58,7 +58,7 @@
                         <div class="card-content">
                             <h4 class="title is-4">Notebook Gamer Asus Rog Strix G15 - AMD Ryzen 9 5980HX </h4>
                             <p class="subtitle is-6">R$ 5.999,00</p>
-                            <button class="button is-primary">Comprar</button>
+                            <button class="button is-primary" data-translate="comprar">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                         <div class="card-content">
                             <h4 class="title is-4">Alienware Pro Headset 75h Autonomia</h4>
                             <p class="subtitle is-6">R$ 618,50</p>
-                            <button class="button is-primary">Comprar</button>
+                            <button class="button is-primary" data-translate="comprar">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                         <div class="card-content">
                             <h4 class="title is-4">ROG Phone 3 Dual SIM 512 GB 12 GB RAM</h4>
                             <p class="subtitle is-6">R$ 3.784,70</p>
-                            <button class="button is-primary">Comprar</button>
+                            <button class="button is-primary" data-translate="comprar">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -99,10 +99,10 @@
 
     <footer class="footer">
         <div class="content has-text-centered">
-            <p>&copy; 2025 CyberStore - Todos os direitos reservados</p>
+            <p data-translate="direitos">&copy; 2025 CyberStore - Todos os direitos reservados</p>
         </div>
     </footer>
 
-
+    <script src="js/config.js"></script>
 </body>
 </html>

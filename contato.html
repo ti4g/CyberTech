@@ -1,77 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberStoreStore - Contato</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="scss/styles.css">
 </head>
 <body>
 
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
-                <h1 class="title is-2by3 has-text-white">CyberStore</h1>
+                <h1 class="title is-4" data-translate="logo">CyberStore</h1>
             </a>
         </div>
 
         <div class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item" href="index.html">Início</a>
-                <a class="navbar-item" href="produtos.html">Produtos</a>
-                <a class="navbar-item" href="sobre.html">Sobre Nós</a>
-                <a class="navbar-item" href="contato.html">Contato</a>
-                <a class="navbar-item" href="config.html">Configurações</a>
+                <a class="navbar-item" href="index.html" data-translate="inicio">Início</a>
+                <a class="navbar-item" href="produtos.html" data-translate="produtos">Produtos</a>
+                <a class="navbar-item" href="sobre.html" data-translate="sobre">Sobre Nós</a>
+                <a class="navbar-item" href="contato.html" data-translate="contato">Contato</a>
+                <a class="navbar-item" href="config.html" data-translate="config">Configurações</a>
             </div>
         </div>
     </nav>
 
     <section class="section">
         <div class="container">
-            <h2 class="title is-2 has-text-centered">Contato</h2>
+            <h2 class="title is-2 has-text-centered" data-translate="contato_titulo">Contato</h2>
             <div class="columns">
                 <div class="column is-half">
                     <form class="box">
                         <div class="field">
-                            <label class="label">Nome</label>
+                            <label class="label" data-translate="nome">Nome</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Seu nome">
+                                <input class="input" type="text" 
+                                       data-translate="[placeholder]nome_placeholder" 
+                                       placeholder="Seu nome">
                             </div>
                         </div>
                         <div class="field">
-                            <label class="label">E-mail</label>
+                            <label class="label" data-translate="email_place">E-mail</label>
                             <div class="control">
-                                <input class="input" type="email" placeholder="Seu e-mail">
+                                <input class="input" type="email" 
+                                       data-translate="[placeholder]email_placeholder" 
+                                       placeholder="Seu e-mail">
                             </div>
                         </div>
                         <div class="field">
-                            <label class="label">Mensagem</label>
+                            <label class="label" data-translate="mensagem">Mensagem</label>
                             <div class="control">
-                                <textarea class="textarea" placeholder="Sua mensagem"></textarea>
+                                <textarea class="textarea" 
+                                          data-translate="[placeholder]mensagem_placeholder" 
+                                          placeholder="Sua mensagem"></textarea>
                             </div>
                         </div>
-                        <button class="button is-primary">Enviar</button>
+                        <button class="button is-primary" data-translate="enviar">Enviar</button>
                     </form>
                 </div>
                 <div class="column is-half">
                     <div class="box">
-                        <h3 class="title is-4">Informações de Contato</h3>
-                        <p><strong>Endereço:</strong> Rua da Tecnologia, 123 - São Paulo/SP</p>
-                        <p><strong>Telefone:</strong> (11) 4002-8922</p>
-                        <p><strong>E-mail:</strong> contato@CyberStorestore.com.br</p>
+                        <h3 class="title is-4" data-translate="info_contato">Informações de Contato</h3>
+                        <p><strong data-translate="endereco">Endereço:</strong> Rua da Tecnologia, 123 - São Paulo/SP</p>
+                        <p><strong data-translate="telefone">Telefone:</strong> (11) 4002-8922</p>
+                        <p><strong data-translate="email">E-mail:</strong> contato@CyberStorestore.com.br</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <script src="/js/config.js"></script>
-
     <footer class="footer">
         <div class="content has-text-centered">
-            <p>&copy; 2025 CyberStore - Todos os direitos reservados</p>
+            <p data-translate="direitos">&copy; 2025 CyberStore - Todos os direitos reservados</p>
         </div>
     </footer>
-
+<script src="js/config.js"></script>
 </body>
 </html>

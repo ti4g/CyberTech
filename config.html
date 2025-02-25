@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberStoreStore - Configurações</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
-                <h1 class="title is-4 has-text-white">CyberStoreStore</h1>
+                <h1 class="title is-4" data-translate="logo">CyberStore</h1>
             </a>
         </div>
 
         <div class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item" href="index.html">Início</a>
-                <a class="navbar-item" href="produtos.html">Produtos</a>
-                <a class="navbar-item" href="sobre.html">Sobre Nós</a>
-                <a class="navbar-item" href="contato.html">Contato</a>
-                <a class="navbar-item" href="config.html">Configurações</a>
+                <a class="navbar-item" href="index.html" data-translate="inicio">Início</a>
+                <a class="navbar-item" href="produtos.html" data-translate="produtos">Produtos</a>
+                <a class="navbar-item" href="sobre.html" data-translate="sobre">Sobre Nós</a>
+                <a class="navbar-item" href="contato.html" data-translate="contato">Contato</a>
+                <a class="navbar-item" href="config.html" data-translate="config">Configurações</a>
             </div>
         </div>
     </nav>
@@ -30,7 +30,7 @@
     <!-- Conteúdo Principal -->
     <section class="section">
         <div class="container">
-            <h2 class="title is-2 has-text-centered">Configurações</h2>
+            <h2 class="title is-2 has-text-centered" data-translate="config">Configurações</h2>
             
             <!-- Painel de Configurações -->
             <div class="columns">
@@ -39,8 +39,8 @@
                     <aside class="menu">
                         <p class="menu-label">Preferências</p>
                         <ul class="menu-list">
-                            <li><a class="is-active" data-tab="tema">Tema</a></li>
-                            <li><a data-tab="idioma">Idioma</a></li>
+                            <li><a class="is-active" data-tab="tema" data-translate="tema">Tema</a></li>
+                            <li><a data-tab="idioma" data-translate="idioma">Idioma</a></li>
                         </ul>
                     </aside>
                 </div>
@@ -49,41 +49,108 @@
                 <div class="column">
                     <!-- Configurações de Tema -->
                     <div id="tema" class="tab-content">
-                        <h3 class="title is-4">Tema</h3>
+                        <h3 class="title is-4" data-translate="tema">Tema</h3>
                         <div class="box">
-                            <div class="field">
-                                <label class="radio">
-                                    <input type="radio" name="tema" value="claro" checked>
-                                    Tema Claro
-                                </label>
+                            <div class="columns is-multiline">
+                                <!-- Coluna 1 -->
+                                <div class="column">
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="claro">
+                                            <span data-translate="tema_claro">Tema Claro</span>
+                                        </label>
+                                    </div>
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="escuro">
+                                            <span data-translate="tema_escuro">Tema Escuro</span>
+                                        </label>
+                                    </div>
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="azul">
+                                            <span data-translate="tema_azul">Tema Azul</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <!-- Coluna 2 -->
+                                <div class="column">
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="verde">
+                                            <span data-translate="tema_verde">Tema Verde</span>
+                                        </label>
+                                    </div>
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="vermelho">
+                                            <span data-translate="tema_vermelho">Tema Vermelho</span>
+                                        </label>
+                                    </div>
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="roxo">
+                                            <span data-translate="tema_roxo">Tema Roxo</span>
+                                        </label>
+                                    </div>
+                                </div>
+                    
+                                <!-- Coluna 3 -->
+                                <div class="column">
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="laranja">
+                                            <span data-translate="tema_laranja">Tema Laaranja</span>
+                                        </label>
+                                    </div>
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="cyber">
+                                            <span data-translate="tema_cyber">Tema Cyber</span>
+                                        </label>
+                                    </div>
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="rosa">
+                                            <span data-translate="tema_rosa">Tema Rosa</span>
+                                        </label>
+                                    </div>
+                                </div>
+                    
+                                <!-- Coluna 4 -->
+                                <div class="column">
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="vintage">
+                                            <span data-translate="tema_vintage">Tema Vintage</span>
+                                        </label>
+                                    </div>
+                                    <div class="field">
+                                        <label class="radio">
+                                            <input type="radio" name="tema" value="contraste">
+                                            <span data-translate="tema_contraste">Tema Alto Contraste</span>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="field">
-                                <label class="radio">
-                                    <input type="radio" name="tema" value="escuro">
-                                    Tema Escuro
-                                </label>
-                            </div>
-                            <button id="aplicar-tema" class="button is-primary">Aplicar Tema</button>
+                            <button id="aplicar-tema" class="button is-primary" data-translate="aplicar_tema">Aplicar Tema</button>
                         </div>
                     </div>
 
                     <!-- Configurações de Idioma -->
                     <div id="idioma" class="tab-content is-hidden">
-                        <h3 class="title is-4">Idioma</h3>
+                        <h3 class="title is-4" data-translate="idioma">Idioma</h3>
                         <div class="box">
                             <div class="field">
-                                <label class="label">Selecione o idioma</label>
+                                <label class="label" data-translate="selecionar_idioma">Selecione o idioma</label>
                                 <div class="control">
                                     <div class="select">
-                                        <select id="selecionar-idioma">
-                                            <option value="pt-br">Português (Brasil)</option>
-                                            <option value="en">Inglês</option>
-                                            <option value="es">Espanhol</option>
-                                        </select>
+                                        <select id="selecionar-idioma"></select>
                                     </div>
                                 </div>
                             </div>
-                            <button id="aplicar-idioma" class="button is-primary">Aplicar Idioma</button>
+                            <button id="aplicar-idioma" class="button is-primary" data-translate="aplicar_idioma">Aplicar Idioma</button>
                         </div>
                     </div>
                 </div>
@@ -94,10 +161,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="content has-text-centered">
-            <p>&copy; 2023 CyberStoreStore - Todos os direitos reservados</p>
+            <p data-translate="direitos">&copy; 2025 CyberStore - Todos os direitos reservados</p>
         </div>
     </footer>
 
-<script src="/js/config.js"></script>
+<script src="js/config.js"></script>
 </body>
 </html>

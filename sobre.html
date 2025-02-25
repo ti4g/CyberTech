@@ -1,66 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberStoreStore - Sobre Nós</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="/scss/styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
 </head>
 <body>
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
-                <h1 class="title is-2by3 has-text-white">CyberStore</h1>
+                <h1 class="title is-4" data-translate="logo">CyberStore</h1>
             </a>
         </div>
 
         <div class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item" href="index.html">Início</a>
-                <a class="navbar-item" href="produtos.html">Produtos</a>
-                <a class="navbar-item" href="sobre.html">Sobre Nós</a>
-                <a class="navbar-item" href="contato.html">Contato</a>
-                <a class="navbar-item" href="config.html">Configurações</a>
+                <a class="navbar-item" href="index.html" data-translate="inicio">Início</a>
+                <a class="navbar-item" href="produtos.html" data-translate="produtos">Produtos</a>
+                <a class="navbar-item" href="sobre.html" data-translate="sobre">Sobre Nós</a>
+                <a class="navbar-item" href="contato.html" data-translate="contato">Contato</a>
+                <a class="navbar-item" href="config.html" data-translate="config">Configurações</a>
             </div>
         </div>
     </nav>
     <section>
-        <div class="container">
-            <h2 class="title is-2 has-text-centered">Sobre Nós</h2>
-            <div class="content">
-                <h3 class="title is-4">Nossa História</h3>
-                <p>Fundada em 2020, a CyberStoreStore vem revolucionando o mercado de tecnologia...</p>
-                
-                <h3 class="title is-4">Nossos Valores</h3>
+        <section>
+            <div class="container">
+                <h2 class="title is-2 has-text-centered" data-translate="sobre_titulo">Sobre Nós</h2>
+                <div class="content">
+                    <h3 class="title is-4" data-translate="nossa_historia">Nossa História</h3>
+                    <p data-translate="historia_texto">Fundada em 2020...</p>
+                    
+                    <h3 class="title is-4" data-translate="nossos_valores">Nossos Valores</h3>
                 <div class="columns">
                     <div class="column">
                         <div class="notification is-primary">
-                            <p class="title is-5">Inovação Tecnológica</p>
+                            <p class="title is-5" data-translate="inovacao_tec">Inovação Tecnológica</p>
                         </div>
                     </div>
                     <div class="column">
                         <div class="notification is-info">
-                            <p class="title is-5">Atendimento Personalizado</p>
+                            <p class="title is-5" data-translate="atendimento_person">Atendimento Personalizado</p>
                         </div>
                     </div>
                     <div class="column">
                         <div class="notification is-success">
-                            <p class="title is-5">Qualidade Garantida</p>
+                            <p class="title is-5" data-translate="qualidade_garantida">Qualidade Garantida</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <script src="/js/config.js"></script>
-
     <footer class="footer">
         <div class="content has-text-centered">
-            <p>&copy; 2025 CyberStore - Todos os direitos reservados</p>
+            <p data-translate="direitos">&copy; 2025 CyberStore - Todos os direitos reservados</p>
         </div>
     </footer>
-
+<script src="js/config.js"></script>
 </body>
 </html>
