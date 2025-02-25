@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nome_placeholder': 'Seu nome',
             'email_placeholder': 'Seu e-mail',
             'mensagem_placeholder': 'Sua mensagem'
+
         },
         'en': {
             'logo': 'CyberStore',
@@ -81,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'email_placed': 'Email',
             'preferencias': 'Preferences',
             'tema': 'Theme',
+            'idioma': 'Language',
             'selecionar_idioma': 'Select language',
             'aplicar_tema': 'Apply Theme',
             'aplicar_idioma': 'Apply Language',
@@ -131,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'email_placed': 'Email',
             'preferencias': 'Preferencias',
             'tema': 'Tema',
+            'idioma': 'Idioma',
             'selecionar_idioma': 'Seleccionar idioma',
             'aplicar_tema': 'Aplicar Tema',
             'aplicar_idioma': 'Aplicar Idioma',

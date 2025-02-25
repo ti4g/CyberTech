@@ -3,12 +3,6 @@
     background-size: cover;
   }
 
-
-  /* Essa parte aqui foi a tentativa da aplicação do modo escuro do deepseek */
-    
-  /* sovo fobo kkk */
-
-
   .tema-claro { background-color: #f8f9fa !important; color: #212529 !important; }
   .tema-claro .navbar, .tema-claro .footer { background-color: #e9ecef !important; }
   
