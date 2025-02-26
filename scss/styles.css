@@ -3,12 +3,6 @@
     background-size: cover;
   }
 
-
-  /* Essa parte aqui foi a tentativa da aplicação do modo escuro do deepseek */
-    
-  /* sovo fobo kkk */
-
-
   .tema-claro { background-color: #f8f9fa !important; color: #212529 !important; }
   .tema-claro .navbar, .tema-claro .footer { background-color: #e9ecef !important; }
   
@@ -42,4 +36,13 @@
   .tema-contraste { background-color: #000 !important; color: #fff !important; }
   .tema-contraste .navbar, .tema-contraste .footer { background-color: #fff !important; }
 
-/* Adicione mais temas conforme necessário */
+/* Garante que o menu móvel ocupe toda a largura */
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+      box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+  }
+  
+  .navbar-item {
+      text-align: center;
+  }
+}

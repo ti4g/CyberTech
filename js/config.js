@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nome_placeholder': 'Seu nome',
             'email_placeholder': 'Seu e-mail',
             'mensagem_placeholder': 'Sua mensagem'
+
         },
         'en': {
             'logo': 'CyberStore',
@@ -255,3 +256,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+            // Menu Hambúrguer (Funciona em todas as páginas)
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(
+                document.querySelectorAll('.navbar-burger'), 0
+            );
+
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        });
