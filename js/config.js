@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isConfigPage = window.location.pathname.includes('config.html');
 
     // nav bar para aparecer em telas pequenas
-    
+
     document.addEventListener('DOMContentLoaded', () => {
         // Get all "navbar-burger" elements
         const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ==================== SISTEMA DE TRADUÇÕES ====================
     const traducoes = {
+        
         'pt-br': {
             'logo': 'CyberStore',
             'inicio': 'Início',
